@@ -67,7 +67,7 @@ include('template/header.php');
           </div>
         </div>
 
-        <!-- untuk device sahaja 
+        
         <div class="card mb-3">
           <div class="card-header text-center"></div>
           <div class="card-body">
@@ -100,7 +100,7 @@ include('template/header.php');
             </form>
           </div>
         </div>
-        -->
+        
 
 <?php include('template/footer.php'); ?>
 

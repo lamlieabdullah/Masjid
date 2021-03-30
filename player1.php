@@ -27,6 +27,8 @@ if (mysqli_num_rows($result) === 1) {
   $saiz = $row['saiz'];
   $negeri =  strtoupper($row['negeri']);   
   $lokasiID = $row['lokasiID'];
+  $adjustment = $row['hijrah_adjustment'];
+  
     
     $content = file_get_contents("admin/zone.json");
     $kandungan = json_decode($content, true);
@@ -95,59 +97,33 @@ if (mysqli_num_rows($result) === 1) {
   /* Add some content at the bottom of the video/page */
   .tarikh-masihi {
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 10px;
     color: #f1f1f1;
-    width: 22%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+	//color: black;
+    width: 27%;
+	text-align: center;
     font-weight: bold;
-  }
+	font-size:1.6em;
+	
+    border: 2px solid white;
+    border-radius: 10px;
+	background-color: rgba(169, 169, 169, 0.8);
+	}
 
   #tarikh-masihi{
     color: black;
-    font-size:2.8em;
   }
 
   #hari-masihi{
-    font-size:1.6em;
-  }
-
-  #bulan-tahun-masihi{
-    color: rgb(0, 191, 255);
-    font-size:1.6em;
-  }
-
-  .tarikh-hijrah {
-    position: fixed;
-    top: 0;
-    right: 10px;
-    text-align: right;
-    color: #f1f1f1;
-    width: 22%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-weight: bold;
+	color: black;
+    font-size:2.5em;
   }
 
   #tarikh-hijrah{
     color: black;
-    font-size:2.8em;
   }
-
-  #bulan-hijrah{
-    text-align: right;
-    font-size:1.6em;
-  }
-
-  #tahun-hijrah{
-    text-align: right;
-    color: rgb(0, 191, 255);
-    font-size:1.6em;
-  }
-  
-  .bulat {
-    border-radius: 50%;
-    background-color: yellow;
-}
 
   /* Add some content at the bottom of the video/page */
   .content {
@@ -170,7 +146,7 @@ if (mysqli_num_rows($result) === 1) {
     position: fixed;
     bottom: 10vh;
     right: 1px;
-    width: 25%;
+    width: 26%;
     border: 2px solid white;
     border-radius: 10px;
     padding: 1px;
@@ -321,11 +297,11 @@ if (mysqli_num_rows($result) === 1) {
     border: 2px solid white;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    bottom: 27vh;
-    right: 40%;
-    width: 20%; /* the plugin works for responsive layouts so width is not necessary */
+    bottom: 40vh;
+    right: 30%;
+    width: 40%; /* the plugin works for responsive layouts so width is not necessary */
     /*height: 10vh;*/
-    font-size:1.8em;
+    font-size:4.5em;
     text-align: center;
     color: yellow;
     background: rgba(0, 0, 128, 0.5);
@@ -500,27 +476,13 @@ if (mysqli_num_rows($result) === 1) {
       </div>
 
   <div class="tarikh-masihi">
-    <div class="row no-gutters">
-      <div class="col-3 bulat text-center">
-        <div  id="tarikh-masihi">00</div>
-      </div>
-      <div class="col-9">
-        <div align="left" id="hari-masihi">XXXXX</div>
-        <div align="left" id="bulan-tahun-masihi"><span id="bulan-masihi">XXXXXXXX</span> <span id="tahun-masihi">0000</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="tarikh-hijrah">
-    <div class="row no-gutters">
-      <div class="col-9">
-        <div align="left" id="bulan-hijrah">JAMADIL AKHIR</div>
-        <div align="left" id="tahun-hijrah">0000</div>
-      </div>
-      <div class="col-3 bulat text-center">
-        <div id="tarikh-hijrah">00</div>
-      </div>
-    </div>
+		<div id="hari-masihi">XXXXX</div>
+		<div id="bulan-tahun-masihi">
+			<span id="tarikh-masihi">00</span>&nbsp;<span id="bulan-masihi">XXXXXXXX</span>&nbsp;<span id="tahun-masihi">0000</span>
+		</div>
+		<div id="bulan-tahun-hijrah">
+			<span id="tarikh-hijrah">00</span>&nbsp;<span id="bulan-hijrah">JAMADILAKHIR</span>&nbsp;<span id="tahun-hijrah">0000</span>
+		</div>
   </div>
 
   <!-- Optional: some overlay text to describe the video -->
@@ -553,6 +515,7 @@ if (mysqli_num_rows($result) === 1) {
       <div class="nama-solat">ISYAK</div>
       <div class="waktu-solat" id="isyak">0:00</div>
     </div>
+	
   </div>
   <div class="nama-jam" id="clock">12.48 PM</div>
     

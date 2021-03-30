@@ -1,3 +1,4 @@
+# https://github.com/batoulapps/adhan-js/blob/master/README.md
 # Adhan JavaScript
 
 The Adhan JavaScript implementation is written to be compatible with the latest version of all major browsers.

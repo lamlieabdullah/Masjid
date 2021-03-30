@@ -106,6 +106,17 @@ if( ($_POST['pilih_zone'] != '0') && ($_POST['pilih_negeri'] != '0') ) {
 		WHERE umum_id='$id'";
 		$result = mysqli_query($dbc, $sql);
 	}
+	
+  if($_POST['mybutton'] == 'hijri_adjust'){
+    $hijri_adjust = escape_data($_POST['hijri_adjust'], $dbc);
+
+		$sql = "UPDATE " . database_prefix ."_umum SET
+    `hijrah_adjustment`='$hijri_adjust'
+		WHERE umum_id='$id'";
+		$result = mysqli_query($dbc, $sql);
+	}	
+
+	
 }
 
 $sql = "SELECT * FROM " . database_prefix ."_umum";
@@ -115,6 +126,7 @@ if (mysqli_num_rows($result) === 1) {
   $row = mysqli_fetch_assoc($result);
   $negeri = strtoupper($row['negeri']);
   $zon = $row['lokasiID'];
+  $adjustment = $row['hijrah_adjustment'];
 }
 
 $title = "Utama";
@@ -174,6 +186,21 @@ include('template/header.php');
       		    </div>
       		  </div>
             <button type="submit" name="mybutton" value="maklumat" class="btn-lg btn-block btn btn-primary">Simpan Maklumat Masjid/Surau</button>
+      </form>
+          </div>
+        </div>
+		<!-- Hijri Adjustment-->
+        <div class="card mb-3">
+          <div class="card-header text-center">Hijri Adjustment</div>
+          <div class="card-body">
+            <form method="POST">
+            <div class="group-set">
+      		    <div class="form-group">
+      		      <label for="lokasi">Hari</label>
+      		      <input type="text" class="form-control" name="hijri_adjust" id="hijri_adjust" placeholder="Hijri Adjust" value="<?php echo $row['hijrah_adjustment'] ?>">
+      		    </div>
+      		  </div>
+            <button type="submit" name="mybutton" value="hijri_adjust" class="btn-lg btn-block btn btn-primary">Simpan Hijri Adjustment</button>
       </form>
           </div>
         </div>

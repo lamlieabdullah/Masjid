@@ -1,0 +1,328 @@
+{
+  "JOHOR": {
+    "JHR01": {
+      "lokasi": "Pulau Aur dan Pemanggil",
+      "latitut": "2.5833",
+      "longitud": "104.3166"
+    },
+    "JHR02": {
+      "lokasi": "Kota Tinggi, Mersing, Johor Bahru",
+      "latitut": "1.7166",
+      "longitud": "103.5333"
+    },
+    "JHR03": {
+      "lokasi": "Kluang dan Pontian",
+      "latitut": "1.65",
+      "longitud": "103.2"
+    },
+    "JHR04": {
+      "lokasi": "Batu Pahat, Muar, Segamat, Gemas",
+      "latitut": "2.26666",
+      "longitud": "102.5333"
+    }
+  },
+  "KEDAH": {
+    "KDH01": {
+      "lokasi": "Kota Setar, Kubang Pasu, Pokok Sena",
+      "latitut": "6.25",
+      "longitud": "100.1916"
+    },
+    "KDH02": {
+      "lokasi": "Pendang, Kuala Muda, Yan",
+      "latitut": "5.5",
+      "longitud": "100.3416"
+    },
+    "KDH03": {
+      "lokasi": "Padang Terap, Sik",
+      "latitut": "6.2583",
+      "longitud": "100.5083"
+    },
+    "KDH04": {
+      "lokasi": "Baling",
+      "latitut": "5.55",
+      "longitud": "100.6083"
+    },
+    "KDH05": {
+      "lokasi": "Kulim, Bandar Bahru",
+      "latitut": "5.1333",
+      "longitud": "100.4916"
+    },
+    "KDH06": {
+      "lokasi": "Langkawi",
+      "latitut": "6.45",
+      "longitud": "99.6333"
+    },
+    "KDH07": {
+      "lokasi": "Gunung Jerai",
+      "latitut": "5.7875",
+      "longitud": "100.4416"
+    }
+  },
+  "KELANTAN": {
+    "KTN01": {
+      "lokasi": "K.Bharu,Bachok,Pasir Puteh,Tumpat,Pasir Mas,Tnh. Merah,Machang,Kuala Krai,Mukim Chiku",
+      "latitut": "6.01666",
+      "longitud": "101.9833"
+    },
+    "KTN03": {
+      "lokasi": "Jeli, Gua Musang (Mukim Galas, Bertam)",
+      "latitut": "4.95",
+      "longitud": "101.5"
+    }
+  },
+  "MELAKA": {
+    "MLK01": {
+      "lokasi": "Bandar Melaka, Alor Gajah, Jasin, Masjid Tanah, Merlimau, Nyalas",
+      "latitut": "2.3833",
+      "longitud": "101.9833"
+    }
+  },
+  "NEGERI_SEMBILAN": {
+    "NGS01": {
+      "lokasi": "Jempol, Tampin",
+      "latitut": "2.9",
+      "longitud": "102.3166"
+    },
+    "NGS02": {
+      "lokasi": "Port Dickson, Seremban, Kuala Pilah, Jelebu, Rembau",
+      "latitut": "2.5333",
+      "longitud": "101.8"
+    }
+  },
+  "PAHANG": {
+    "PHG01": {
+      "lokasi": "Pulau Tioman",
+      "latitut": "2.8",
+      "longitud": "104.15"
+    },
+    "PHG02": {
+      "lokasi": "Kuantan, Pekan, Rompin, Muadzam Shah",
+      "latitut": "3.0833",
+      "longitud": "102.7833"
+    },
+    "PHG03": {
+      "lokasi": "Maran, Chenor, Temerloh, Bera, Jerantut, Jengka",
+      "latitut": "3.4666",
+      "longitud": "102.1166"
+    },
+    "PHG04": {
+      "lokasi": "Bentong, Raub, Kuala Lipis",
+      "latitut": "3.98333",
+      "longitud": "101.7333"
+    },
+    "PHG05": {
+      "lokasi": "Genting Sempah, Janda Baik, Bukit Tinggi",
+      "latitut": "3.3833",
+      "longitud": "101.8333"
+    },
+    "PHG06": {
+      "lokasi": "Bukit Fraser, Genting Higlands, Cameron Higlands",
+      "latitut": "4.05",
+      "longitud": "101.4"
+    }
+  },
+  "PERLIS": {
+    "PLS01": {
+      "lokasi": "Kangar, Padang Besar, Arau",
+      "latitut": "6.4219",
+      "longitud": "100.1216"
+    }
+  },
+  "PULAU_PINANG": {
+    "PNG01": {
+      "lokasi": "Seluruh Negeri Pulau Pinang",
+      "latitut": "5.4166",
+      "longitud": "100.2"
+    }
+  },
+  "PERAK": {
+    "PRK01": {
+      "lokasi": "Tapah,Slim River dan Tanjung Malim",
+      "latitut": "3.7833",
+      "longitud": "101.625"
+    },
+    "PRK02": {
+      "lokasi": "Ipoh, Batu Gajah, Kampar, Sg. Siput dan Kuala Kangsar",
+      "latitut": "4.8916",
+      "longitud": "101.4458"
+    },
+    "PRK03": {
+      "lokasi": "Pengkalan Hulu, Grik dan Lenggong",
+      "latitut": "5.0083",
+      "longitud": "101.4458"
+    },
+    "PRK04": {
+      "lokasi": "Temengor dan Belum",
+      "latitut": "5.50416",
+      "longitud": "101.75"
+    },
+    "PRK05": {
+      "lokasi": "Teluk Intan, Bagan Datoh, Kg.Gajah,Sri Iskandar, Beruas,Parit,Lumut,Setiawan dan Pulau Pangkor",
+      "latitut": "3.7166",
+      "longitud": "101.25"
+    },
+    "PRK06": {
+      "lokasi": "Selama, Taiping, Bagan Serai dan Parit Buntar",
+      "latitut": "5.2666",
+      "longitud": "100.95"
+    },
+    "PRK07": {
+      "lokasi": "Bukit Larut",
+      "latitut": "4.8666",
+      "longitud": "100.8"
+    }
+  },
+  "SABAH": {
+    "SBH01": {
+      "lokasi": "Zon 1 - Sandakan, Bdr. Bkt. Garam, Semawang, Temanggong, Tambisan",
+      "latitut": "5.5",
+      "longitud": "117.8"
+    },
+    "SBH02": {
+      "lokasi": "Zon 2 - Pinangah, Terusan, Beluran, Kuamut, Telupit",
+      "latitut": "5.216666",
+      "longitud": "116.8166"
+    },
+    "SBH03": {
+      "lokasi": "Zon 3 - Lahad Datu, Kunak, Silabukan, Tungku, Sahabat, Semporna",
+      "latitut": "5.016666",
+      "longitud": "118.3333"
+    },
+    "SBH04": {
+      "lokasi": "Zon 4 - Tawau, Balong, Merotai, Kalabakan",
+      "latitut": "4.41666",
+      "longitud": "117.5"
+    },
+    "SBH05": {
+      "lokasi": "Zon 5 - Kudat, Kota Marudu, Pitas, Pulau Banggi",
+      "latitut": "6.88333",
+      "longitud": "116.83333"
+    },
+    "SBH06": {
+      "lokasi": "Zon 6 - Gunung Kinabalu",
+      "latitut": "6.083333",
+      "longitud": "116.5333"
+    },
+    "SBH07": {
+      "lokasi": "Zon 7 - Papar, Ranau, Kota Belud, Tuaran, Penampang, Kota Kinabalu",
+      "latitut": "5.7333",
+      "longitud": "115.93333"
+    },
+    "SBH08": {
+      "lokasi": "Zon 8 - Pensiangan, Keningau, Tambunan, Nabawan",
+      "latitut": "5.33333",
+      "longitud": "116.1666"
+    },
+    "SBH09": {
+      "lokasi": "Zon 9 - Sipitang, Membakut, Beaufort, Kuala Penyu, Weston, Tenom, Long Pa Sia",
+      "latitut": "5.08333",
+      "longitud": "115.55"
+    }
+  },
+  "SELANGOR": {
+    "SGR01": {
+      "lokasi": "Gombak,H.Selangor,Rawang, H.Langat, Sepang, Petaling, S.Alam",
+      "latitut": "3.7333",
+      "longitud": "101.3833"
+    },
+    "SGR02": {
+      "lokasi": "Sabak Bernam, Kuala Selangor",
+      "latitut": "3.9333",
+      "longitud": "100.7"
+    },
+    "SGR03": {
+      "lokasi": "Klang, Kuala Langat",
+      "latitut": "3.0166",
+      "longitud": "101.25"
+    }
+  },
+  "SARAWAK": {
+    "SWK01": {
+      "lokasi": "Zon 1 - Limbang, Sundar, Terusan, Lawas",
+      "latitut": "4.7833333",
+      "longitud": "114.8333"
+    },
+    "SWK02": {
+      "lokasi": "Zon 2 - Niah, Belaga, Sibuti, Miri, Bekenu, Marudi",
+      "latitut": "3.58333",
+      "longitud": "113.7166"
+    },
+    "SWK03": {
+      "lokasi": "Zon 3 - Song, Belingan, Sebauh, Bintulu, Tatau, Kapit",
+      "latitut": "2.88333",
+      "longitud": "112.8666"
+    },
+    "SWK04": {
+      "lokasi": "Zon 4 - Igan, Kanowit, Sibu, Dalat, Oya",
+      "latitut": "2.83333",
+      "longitud": "111.7"
+    },
+    "SWK05": {
+      "lokasi": "Zon 5 - Belawai, Matu, Daro, Sarikei, Julau, Bitangor, Rajang",
+      "latitut": "2.23333",
+      "longitud": "111.21666666"
+    },
+    "SWK06": {
+      "lokasi": "Zon 6 - Kabong, Lingga, Sri Aman, Engkelili, Betong, Spaoh, Pusa, Saratok, Roban, Debak",
+      "latitut": "1.7833",
+      "longitud": "111.11666"
+    },
+    "SWK07": {
+      "lokasi": "Zon 7 - Samarahan, Simunjan, Serian, Sebuyau, Meludam",
+      "latitut": "1.4666",
+      "longitud": "110.48333"
+    },
+    "SWK08": {
+      "lokasi": "Zon 8 - Kuching, Bau, Lundu,Sematan",
+      "latitut": "1.81666",
+      "longitud": "109.7666"
+    },
+    "SWK09": {
+      "lokasi": "Zon 9 - Zon Khas (Kampung Patarikan)",
+      "latitut": "4.96111",
+      "longitud": "115.4861"
+    }
+  },
+  "TERENGGANU": {
+    "TRG01": {
+      "lokasi": "Kuala Terengganu, Marang",
+      "latitut": "5.25",
+      "longitud": "102.9666"
+    },
+    "TRG02": {
+      "lokasi": "Besut, Setiu",
+      "latitut": "5.4166",
+      "longitud": "102.4166"
+    },
+    "TRG03": {
+      "lokasi": "Hulu Terengganu",
+      "latitut": "5",
+      "longitud": "102.5333"
+    },
+    "TRG04": {
+      "lokasi": "Kemaman Dungun",
+      "latitut": "4.5",
+      "longitud": "102.8666"
+    }
+  },
+  "WILAYAH PERSEKUTUAN": {
+    "WLY01": {
+      "lokasi": "Kuala Lumpur, Putrajaya",
+      "latitut": "3.7333",
+      "longitud": "101.3833"
+    },
+    "WLY02": {
+      "lokasi": "Labuan",
+      "latitut": "5.2480",
+      "longitud": "115.1397"
+    }
+  },
+    
+"BRUNEI": {
+    "BRN01": {
+      "lokasi": "Bandar Seri Begawan",
+      "latitut": "4.94029",
+      "longitud": "114.94806"
+    }
+  }
+}

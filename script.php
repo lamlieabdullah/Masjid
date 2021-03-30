@@ -239,8 +239,61 @@ function get_prayer_times(){
 
     document.getElementById('isyak').innerHTML = formattedTime(prayerTimes.isha, 8);
       
-    get_tarikh();
+    get_tarikh_oee();
 
+}
+
+function get_tarikh_oee(){
+	var iMonthNames = new Array("Muharram","Safar","Rabiul Awal","Rabiul Akhir",
+	"Jamadil Awal","Jamadil Akhir","Rejab","Syaban",
+  "Ramadan","Syawal","Zulkaedah","Zhulhijjah");
+  
+  var wdNames = new Array("Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu");
+
+	
+	var iDate = kuwaiticalendar(<?php echo $adjustment; ?>);
+//	var outputIslamicDate = wdNames[iDate[4]] + ", " 
+//	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
+	var outputIslamicDate = iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7];
+	//console.log(outputIslamicDate);
+
+  var tahun = moment().year();
+    var maghrib = toDate(document.getElementById("maghrib").textContent);
+    console.log(maghrib);
+    var currentTime = new Date();
+    var hariTahunMasihi = moment().dayOfYear() - 1;
+    
+    if(currentTime>=maghrib){
+        var hariTahunHijrah = moment().dayOfYear();
+    }else{
+        var hariTahunHijrah = moment().dayOfYear() - 1;
+    }
+  
+//    $.getJSON("waktuSolat/2019/hijrah.json", function(result){
+
+        //var tarikh_masihi  = result[hariTahunMasihi].TarikhMiladi;
+        //var tarikh_hijrah  = result[hariTahunHijrah].TarikhHijri;
+        var tarikh_masihi  = formatDate(currentTime);
+        //result[hariTahunMasihi].Hari.toUpperCase();
+
+                
+//        var pecah_tarikh_hijrah = tarikh_hijrah.split("-");
+//        document.getElementById("tarikh-hijrah").innerHTML = pecah_tarikh_hijrah[0];
+//        document.getElementById("bulan-hijrah").innerHTML = pecah_tarikh_hijrah[1].toUpperCase();
+//        document.getElementById("tahun-hijrah").innerHTML = pecah_tarikh_hijrah[2];
+
+        document.getElementById("tarikh-hijrah").innerHTML = iDate[5];
+        document.getElementById("bulan-hijrah").innerHTML = iMonthNames[iDate[6]].toUpperCase();
+        document.getElementById("tahun-hijrah").innerHTML = iDate[7];
+       
+        
+        var pecah_tarikh_masihi = tarikh_masihi.split("-");   
+        document.getElementById("hari-masihi").innerHTML = wdNames[currentTime.getDay()].toUpperCase();
+		    document.getElementById("tarikh-masihi").innerHTML = pecah_tarikh_masihi[0];
+        document.getElementById("bulan-masihi").innerHTML = pecah_tarikh_masihi[1].toUpperCase();
+        document.getElementById("tahun-masihi").innerHTML = pecah_tarikh_masihi[2];
+  //  });
+        
 }
 
 function get_tarikh(){

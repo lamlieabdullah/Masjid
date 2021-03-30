@@ -24,6 +24,7 @@ sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
 sudo apt install git -y
 cd /var/www/html
 git clone https://github.com/lamlieabdullah/masjid
+sudo chmod -R a+rw images/
 
 
 

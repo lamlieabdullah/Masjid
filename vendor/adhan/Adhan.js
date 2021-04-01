@@ -112,6 +112,11 @@
         Singapore: function() {
             return new CalculationParameters(20, 18, 0, "Singapore");
         },
+        
+        // Malaysia
+        Malaysia: function() {
+            return new CalculationParameters(18, 18, 0, "Malaysia");
+        },
 
         // Other
         Other: function() {

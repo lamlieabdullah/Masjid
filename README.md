@@ -1,7 +1,7 @@
 # Masjid
 Paparan info masjid.
 
-Forcked from https://denshie.com/
+Forked from https://denshie.com/
 
 sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/install.sh
 

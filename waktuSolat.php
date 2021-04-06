@@ -19,9 +19,10 @@ $kandungan = json_decode($content, true);
 
 //$keluaran = array();
 
-$datee = mktime(0,0,0,$bulan,$hari,$tahun);
+$datee = mktime(0,0,0);
+//$datee = mktime(0,0,0,date("m-d-yyyy"));
 //echo $datee->getTimestamp();
-echo date($datee);
+// echo date($datee);
 
 $key = array_search($datee, array_column($kandungan["prayer_times"],"datestamp"));
 
@@ -37,4 +38,4 @@ $maghrib =  $waktu_solat["maghrib"];
 $isyak =  $waktu_solat["isyak"];
 
 $keluaran = ['lokasi' => $lokasi, 'date' => $date, 'imsak' => $imsak, 'subuh' => $subuh, 'syuruk' => $syuruk, 'zohor' => $zohor, 'asar' => $asar, 'maghrib' => $maghrib, 'isyak' => $isyak ];
-echo json_encode($keluaran);
+// echo json_encode($keluaran);

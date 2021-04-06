@@ -1,4 +1,8 @@
-<?php $bil_video = $no_video - 1; ?>
+<?php 
+$bil_video = $no_video - 1; 
+require('waktuSolat.php');
+
+?>
 <script type="text/javascript">
 var play_video = 1;
 
@@ -239,8 +243,18 @@ function get_prayer_times(){
 
     document.getElementById('isyak').innerHTML = formattedTime(prayerTimes.isha, 8);
       
-    get_tarikh_oee();
+}
 
+function get_prayer_times_json (){
+    console.log('get prayer time json');
+
+    document.getElementById('subuh').innerHTML = <?php echo($subuh) ?>;
+    document.getElementById('imsak').innerHTML = <?php echo($imsak) ?>;
+    document.getElementById('syuruk').innerHTML = <?php echo($syuruk) ?>;
+    document.getElementById('zohor').innerHTML = <?php echo($zohor) ?>;
+    document.getElementById('asar').innerHTML = <?php echo($asar) ?>;
+    document.getElementById('maghrib').innerHTML = <?php echo($maghrib) ?>;
+    document.getElementById('isyak').innerHTML = <?php echo($isyak) ?>;	
 }
 
 function get_tarikh_oee(){
@@ -549,8 +563,15 @@ $('.marquee').marquee({
   duplicated: true
 });
 
+<?php
+if (!empty($date)) { ?>
+        get_prayer_times_json();
+<?php } else { ?>
+        get_prayer_times();
+<?php } ?>
 
-get_prayer_times();
+?>
+get_tarikh_oee();
 startTime();
 getUpdate();
 

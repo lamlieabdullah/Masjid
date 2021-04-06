@@ -248,13 +248,13 @@ function get_prayer_times(){
 function get_prayer_times_json (){
     console.log('get prayer time json');
 
-    document.getElementById('subuh').innerHTML = <?php echo($subuh) ?>;
-    document.getElementById('imsak').innerHTML = <?php echo($imsak) ?>;
-    document.getElementById('syuruk').innerHTML = <?php echo($syuruk) ?>;
-    document.getElementById('zohor').innerHTML = <?php echo($zohor) ?>;
-    document.getElementById('asar').innerHTML = <?php echo($asar) ?>;
-    document.getElementById('maghrib').innerHTML = <?php echo($maghrib) ?>;
-    document.getElementById('isyak').innerHTML = <?php echo($isyak) ?>;	
+    document.getElementById('subuh').innerHTML = ("<?php echo($subuh) ?>").toUpperCase();;
+    document.getElementById('imsak').innerHTML = ("<?php echo($imsak) ?>").toUpperCase();;
+    document.getElementById('syuruk').innerHTML = ("<?php echo($syuruk) ?>").toUpperCase();;
+    document.getElementById('zohor').innerHTML = ("<?php echo($zohor) ?>").toUpperCase();;
+    document.getElementById('asar').innerHTML = ("<?php echo($asar) ?>").toUpperCase();;
+    document.getElementById('maghrib').innerHTML = ("<?php echo($maghrib) ?>").toUpperCase();;
+    document.getElementById('isyak').innerHTML = ("<?php echo($isyak) ?>").toUpperCase();;
 }
 
 function get_tarikh_oee(){

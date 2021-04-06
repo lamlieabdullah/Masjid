@@ -2,6 +2,9 @@
 Paparan info masjid.
 
 Forked from https://denshie.com/
+waktu solat jakim.json grabed from https://api.azanpro.com/reference/times/today
+
+
 
 sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/install.sh
 

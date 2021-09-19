@@ -1,7 +1,7 @@
 <?php
 if(!defined('LIVE')) DEFINE('LIVE', true);
-define('CONTACT_EMAIL', 'faiz.lop@gmail.com');  //pinda dengan mengisi dengan maklumat yang sesuai
-define ('BASE_URL', 'localhost/projek'); //pinda dengan mengisi dengan maklumat yang sesuai
+define('CONTACT_EMAIL', 'lamlie@gmail.com');  //pinda dengan mengisi dengan maklumat yang sesuai
+define ('BASE_URL', 'localhost/masjid'); //pinda dengan mengisi dengan maklumat yang sesuai
 define ('BASE_URI', 'C:/xampp/htdocs'); //pinda dengan mengisi dengan maklumat yang sesuai
 
 /*=============== jangan pinda di bawah bahagian ini sekiranya anda tidak tahu apa yang anda lakukan=========================*/

@@ -1,6 +1,6 @@
 <?php
 DEFINE ('DB_USER', 'root'); //pinda dengan mengisi dengan maklumat yang sesuai
-DEFINE ('DB_PASSWORD', ''); //pinda dengan mengisi dengan maklumat yang sesuai
+DEFINE ('DB_PASSWORD', 'password'); //pinda dengan mengisi dengan maklumat yang sesuai
 DEFINE ('DB_HOST', 'localhost'); //pinda dengan mengisi dengan maklumat yang sesuai
 DEFINE ('DB_NAME', 'db_masjid'); //pinda dengan mengisi dengan maklumat yang sesuai
 

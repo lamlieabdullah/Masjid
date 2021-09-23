@@ -1,8 +1,15 @@
 <?php
+<<<<<<< HEAD
 if(!defined('LIVE')) DEFINE('LIVE', false);
 define('CONTACT_EMAIL', 'lamlie@gmail.com');  //pinda dengan mengisi dengan maklumat yang sesuai
 define ('BASE_URL', 'localhost/masjid/'); //pinda dengan mengisi dengan maklumat yang sesuai
 define ('BASE_URI', '/var/www/html/masjid/'); //pinda dengan mengisi dengan maklumat yang sesuai
+=======
+if(!defined('LIVE')) DEFINE('LIVE', true);
+define('CONTACT_EMAIL', 'lamlie@gmail.com');  //pinda dengan mengisi dengan maklumat yang sesuai
+define ('BASE_URL', 'localhost/masjid'); //pinda dengan mengisi dengan maklumat yang sesuai
+define ('BASE_URI', 'C:/xampp/htdocs'); //pinda dengan mengisi dengan maklumat yang sesuai
+>>>>>>> 1028fc8d883196f537477c6a9a6cd90a7c51f83a
 
 /*=============== jangan pinda di bawah bahagian ini sekiranya anda tidak tahu apa yang anda lakukan=========================*/
 define ('MYSQL', BASE_URI . '/config/sql.inc.php'); 

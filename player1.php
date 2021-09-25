@@ -85,8 +85,8 @@ if (mysqli_num_rows($result) === 1) {
     position: fixed;
     bottom: 0;
     width: 100%; /* the plugin works for responsive layouts so width is not necessary */
-    height: 10vh;
-    font-size:3.0em;
+    height: 9vh;
+    font-size:2.5em;
     text-align: center;
     background-color: black;
     color: yellow;
@@ -102,10 +102,10 @@ if (mysqli_num_rows($result) === 1) {
     color: #f1f1f1;
 	text-align: center;
 	//color: black;
-    width: 27%;
+    width: 20%;
 	text-align: center;
     font-weight: bold;
-	font-size:1.6em;
+	font-size:1.3em;
 	
     border: 2px solid white;
     border-radius: 10px;
@@ -118,7 +118,7 @@ if (mysqli_num_rows($result) === 1) {
 
   #hari-masihi{
 	color: black;
-    font-size:2.5em;
+    font-size:2.0em;
   }
 
   #tarikh-hijrah{
@@ -130,8 +130,8 @@ if (mysqli_num_rows($result) === 1) {
     position: fixed;
     bottom: 10vh;
     color: #f1f1f1;
-    width: 100%;
-    font-size:1.2em;
+    width: 102%;
+    font-size:1.5em;
   }
 
   .nama-solat{
@@ -146,7 +146,7 @@ if (mysqli_num_rows($result) === 1) {
     position: fixed;
     bottom: 10vh;
     right: 1px;
-    width: 26%;
+    width: 24%;
     border: 2px solid white;
     border-radius: 10px;
     padding: 1px;
@@ -169,8 +169,8 @@ if (mysqli_num_rows($result) === 1) {
 
   .col-solat{
     border: 2px solid white;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
     display: inline-block;
     width: 10%;
     margin: 1px;

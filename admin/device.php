@@ -71,7 +71,7 @@ include('template/header.php');
         <div class="card mb-3">
           <div class="card-header text-center"></div>
           <div class="card-body">
-            <form method="post">
+            <form method="get">
               <input type="hidden" class="form-control" id="jam_tahun" name="jam_tahun" value="">
               <input type="hidden" class="form-control" id="jam_bulan" name="jam_bulan" value="">
               <input type="hidden" class="form-control" id="jam_hari" name="jam_hari" value="">
@@ -92,15 +92,15 @@ include('template/header.php');
           </div>
         </div>
 
-        <div class="card mb-3">
+        <!-- oee div class="card mb-3">
           <div class="card-header text-center"></div>
           <div class="card-body">
             <form method="post">
               <button type="submit" name="mybutton" value="shutdown" class="btn btn-lg btn-block btn-danger">Shutdown</button>
             </form>
           </div>
-        </div>
-        
+        </div -->
+
 
 <?php include('template/footer.php'); ?>
 

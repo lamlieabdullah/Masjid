@@ -1,5 +1,5 @@
-<?php 
-$bil_video = $no_video - 1; 
+<?php
+$bil_video = $no_video - 1;
 require('waktuSolat.php');
 
 ?>
@@ -219,17 +219,29 @@ function startTime() {
   setTimeout(function(){ startTime() }, 1000);
 }
 
+function get_prayer_times_json (){
+    console.log('get prayer time json');
+
+    document.getElementById('subuh').innerHTML = ("<?php echo($subuh) ?>").toUpperCase();;
+    document.getElementById('imsak').innerHTML = ("<?php echo($imsak) ?>").toUpperCase();;
+    document.getElementById('syuruk').innerHTML = ("<?php echo($syuruk) ?>").toUpperCase();;
+    document.getElementById('zohor').innerHTML = ("<?php echo($zohor) ?>").toUpperCase();;
+    document.getElementById('asar').innerHTML = ("<?php echo($asar) ?>").toUpperCase();;
+    document.getElementById('maghrib').innerHTML = ("<?php echo($maghrib) ?>").toUpperCase();;
+    document.getElementById('isyak').innerHTML = ("<?php echo($isyak) ?>").toUpperCase();;
+}
+
 function get_prayer_times(){
     console.log('get prayer time');
     var date = new Date();
     var coordinates = new adhan.Coordinates(<?php echo $latitut; ?>, <?php echo $longitud; ?>);
-    var params = adhan.CalculationMethod.Singapore();
+    var params = adhan.CalculationMethod.Malaysia();
     params.madhab = adhan.Madhab.Shafi;
     var prayerTimes = new adhan.PrayerTimes(coordinates, date, params);
-    var formattedTime = adhan.Date.formattedTime;   
+    var formattedTime = adhan.Date.formattedTime;
 
     document.getElementById('subuh').innerHTML = formattedTime(prayerTimes.fajr, 8);
-    
+
     var waktuSubuh = document.getElementById("subuh").textContent;
     document.getElementById('imsak').innerHTML = moment(waktuSubuh, "h:mm A").subtract(10, 'm').format("h:mm A");
 
@@ -242,19 +254,9 @@ function get_prayer_times(){
     document.getElementById('maghrib').innerHTML = formattedTime(prayerTimes.maghrib, 8);
 
     document.getElementById('isyak').innerHTML = formattedTime(prayerTimes.isha, 8);
-      
-}
 
-function get_prayer_times_json (){
-    console.log('get prayer time json');
+ //   get_tarikh_oee();
 
-    document.getElementById('subuh').innerHTML = ("<?php echo($subuh) ?>").toUpperCase();;
-    document.getElementById('imsak').innerHTML = ("<?php echo($imsak) ?>").toUpperCase();;
-    document.getElementById('syuruk').innerHTML = ("<?php echo($syuruk) ?>").toUpperCase();;
-    document.getElementById('zohor').innerHTML = ("<?php echo($zohor) ?>").toUpperCase();;
-    document.getElementById('asar').innerHTML = ("<?php echo($asar) ?>").toUpperCase();;
-    document.getElementById('maghrib').innerHTML = ("<?php echo($maghrib) ?>").toUpperCase();;
-    document.getElementById('isyak').innerHTML = ("<?php echo($isyak) ?>").toUpperCase();;
 }
 
 function get_tarikh_oee(){
@@ -563,14 +565,15 @@ $('.marquee').marquee({
   duplicated: true
 });
 
+
+//get_prayer_times();
 <?php
 if (!empty($date)) { ?>
-        get_prayer_times_json();
+	get_prayer_times_json();
 <?php } else { ?>
-        get_prayer_times();
+	get_prayer_times();
 <?php } ?>
 
-?>
 get_tarikh_oee();
 startTime();
 getUpdate();

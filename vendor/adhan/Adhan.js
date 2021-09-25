@@ -48,8 +48,7 @@
         this.ishaInterval = ishaInterval || 0;
         this.madhab = Madhab.Shafi;
         this.highLatitudeRule = HighLatitudeRule.MiddleOfTheNight;
-        this.adjustments = { fajr: 1, sunrise: 0, dhuhr: 1.13, asr: 1, maghrib: 1, isha: 1 };
-//oee        this.adjustments = { fajr: 0, sunrise: 0, dhuhr: 0, asr: 0, maghrib: 0, isha: 0 };
+        this.adjustments = { fajr: 0, sunrise: 0, dhuhr: 0, asr: 0, maghrib: 0, isha: 0 };
 
         this.nightPortions = function() {
             switch(this.highLatitudeRule) {
@@ -809,8 +808,7 @@
 
     function roundedMinute(date) {
         var seconds = date.getUTCSeconds();
-        var offset = seconds >= 60 ? 60 - seconds : -1 * seconds;
-//      oee  var offset = seconds >= 30 ? 60 - seconds : -1 * seconds;
+        var offset = seconds >= 30 ? 60 - seconds : -1 * seconds;
         return dateByAddingSeconds(date, offset);
     }
 

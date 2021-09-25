@@ -60,6 +60,7 @@ if(isset($_SESSION['UserData']['Username'])){
       <div class="card-header text-center">Sistem Paparan Digital</div>
       <div class="card-body">
           <p>Kata Nama: admin</p>
+      <p>Kata Laluan: xxxxxxxx</p>
         <form action="login.php" method="post">
           <div class="form-group">
             <label for="exampleInputEmail1">Kata Nama</label>

@@ -25,9 +25,9 @@
     }
 
     var date = new Date();
-    var coordinates = new adhan.Coordinates(35.78056, -78.6389);
-    var params = adhan.CalculationMethod.MuslimWorldLeague();
-    params.madhab = adhan.Madhab.Hanafi;
+    var coordinates = new adhan.Coordinates(3.466667, 102.116667);
+    var params = adhan.CalculationMethod.Malaysia();
+    params.madhab = adhan.Madhab.Shafi;
     var prayerTimes = new adhan.PrayerTimes(coordinates, date, params);
     var formattedTime = adhan.Date.formattedTime;
 

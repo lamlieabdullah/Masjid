@@ -5,6 +5,8 @@
 
 	Waktu Solat API v2 created by Afif Zafri
 	XML data are fetch directly from JAKIM e-solat website
+	This new version will be able to fetch prayer time data for the whole Year or by each month for chosen Zone
+
 */
 
 require('config/config.inc.php');
@@ -27,7 +29,8 @@ if (mysqli_num_rows($result) === 1) {
 	# print JSON data
 	//echo header('Content-Type: application/json');
 	$json_pretty = json_encode(json_decode(json_encode($arrData)), JSON_PRETTY_PRINT);
-	
+	//echo $json_pretty;
+
 	//Write to file
 	$waktusolat = json_decode($json_pretty, true);
 		
@@ -36,10 +39,10 @@ if (mysqli_num_rows($result) === 1) {
 		if( is_dir($dir) === false )
 		{
 			mkdir($dir);
-                        chmod($dir, 0777);
+			chmod($dir, 0777);
 			mkdir($dir . '/lokasi/');
 			chmod($dir . '/lokasi/', 0777);
-                        
+
 		}
 
 		$fileName = 'waktuSolat/'. $tahun . '/lokasi/' . $zone . '.json';
@@ -48,13 +51,13 @@ if (mysqli_num_rows($result) === 1) {
 		//fclose($fp);
 		file_put_contents($fileName, $json_pretty);
 		
-		//chmod($fileName, 0777);
+		chmod($fileName, 0777);
 		echo "Done. ";
 		echo "Zone: " . $zone;
 		echo "Tahun: " . $tahun;
-	} 
-        echo "<br>";
-        echo $json_pretty;
+	} else {
+		echo "NO_RECORD!";
+	}
 
 # function for fetching the webpage and parse data
 function fetchPage($kodzon,$tahun)

@@ -232,7 +232,7 @@ function get_prayer_times_json (){
 }
 
 function get_prayer_times(){
-    console.log('get prayer time');
+    console.log('calculate prayer time');
     var date = new Date();
     var coordinates = new adhan.Coordinates(<?php echo $latitut; ?>, <?php echo $longitud; ?>);
     var params = adhan.CalculationMethod.Malaysia();

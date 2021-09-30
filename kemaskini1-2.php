@@ -1,5 +1,5 @@
 <?php
-require('./config/config.inc.php');
+require('config/config.inc.php');
 
 if(!isset($_SESSION['UserData']['Username'])){
   header("location:admin/login.php");
@@ -9,6 +9,14 @@ if(!isset($_SESSION['UserData']['Username'])){
 $title = "Kemaskini";
 include('admin/template/header.php');
 
+require(MYSQL);
+
+$sql = "SELECT `lokasiID` FROM " . database_prefix ."_umum";
+$result = mysqli_query($dbc, $sql);
+if (mysqli_num_rows($result) === 1) {
+  $row = mysqli_fetch_assoc($result);
+  $lokasiID =  $row['lokasiID'];
+}
 ?>
 
 <!-- Breadcrumbs-->
@@ -147,9 +155,57 @@ if(isset($msg)){
       </form>
     </div>
   </div>
+<?php
+    $lastDate =  "File not found!";
+    $x = 1;
+    while ($x >= 0) {
+      $tahun = date("Y") + $x;
+      $fileName = 'waktuSolat/'. $tahun . "/lokasi/" . $lokasiID . ".json";
+      //echo $fileName;
+      if (file_exists($fileName)){
+          $content = file_get_contents("waktuSolat/".$tahun."/lokasi/" . $lokasiID . ".json");
+          $kandungan = json_decode($content, true);
+          foreach ($kandungan["prayer_times"] as $key => $value) {
+            $waktu_solat = $kandungan["prayer_times"][$key];
+          }
+          $lastDate = $waktu_solat["date"];
+          break;     
+      }
+      $x = $x - 1;
+    }
+    
+?>
+  <div class="card mb-3">
+          <div class="card-header text-center">Kemaskini Waktu Solat:</div>
+          <div class="card-body">
+            <form method="post" action="grabjakim.php">
+                <div class="form-group">
+        		      <label for="longitut">
+                    Zone: <?php echo $lokasiID; ?> <br> 
+                    Last Date: <?php echo $lastDate; ?>
+                  </label>
+        		    </div>
+        		    <div class="form-group">
+        		      <label for="longitut">Tahun</label>
+        		      <select name='pilih_tahun' id='pilih_tahun' class="form-control">
+        		        <option value='0'>Pilih Tahun</option>
+        		      </select>
+        		    </div>
+        		  </div>
+              <button type="submit" name="mybutton" value="zon" class="btn-lg btn-block btn btn-primary">Simpan Waktu Solat</button>
+            </form>
+          </div>
+        </div>
 
   <?php include('admin/template/footer.php'); ?>
   <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        //var textpilih = "<option value=''>Pilih Tahun</option>";
+        var tahun = "";
+          tahun += "<option value='" + year + "'>" + year + "</option>";
+          tahun += "<option value='" + (year +1) + "'>" + (year + 1) + "</option>";
+          $('#pilih_tahun').append(tahun); //append list
 
   </script>
 </div>

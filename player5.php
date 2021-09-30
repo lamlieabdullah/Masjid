@@ -26,6 +26,7 @@ if (mysqli_num_rows($result) === 1) {
   $solat_isyak = $row['solat_isyak'];
   $saiz = $row['saiz'];
   $lokasiID = $row['lokasiID'];
+  $adjustment = $row['hijrah_adjustment'];
 }
 
 ?>

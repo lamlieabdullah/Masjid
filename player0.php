@@ -27,6 +27,7 @@ if (mysqli_num_rows($result) === 1) {
   $saiz = $row['saiz'];
   $negeri =  strtoupper($row['negeri']);   
   $lokasiID = $row['lokasiID'];
+  $adjustment = $row['hijrah_adjustment'];
     
     $content = file_get_contents("admin/zone.json");
     $kandungan = json_decode($content, true);

@@ -6,7 +6,7 @@
 # sudo nano install.sh
 # Place this content in it and then make the file executable:
 # sudo chmod +x install.sh
-# Execute the script to install Odoo:
+# Execute the script to install:
 # ./install
 ################################################################################
 

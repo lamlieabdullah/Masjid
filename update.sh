@@ -2,12 +2,12 @@
 #!/bin/bash
 ################################################################################
 #-------------------------------------------------------------------------------
-# Make a new file:
-# sudo nano install.sh
+# Download file
+# sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/update.sh 
 # Place this content in it and then make the file executable:
-# sudo chmod +x install.sh
+# sudo chmod +x update.sh
 # Execute the script to install:
-# ./install
+# ./update
 ################################################################################
 
 cd /var/www/html/Masjid

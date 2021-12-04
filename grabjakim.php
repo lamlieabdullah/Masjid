@@ -138,7 +138,7 @@ function convertTime($time)
     // convert 24h to 12h
     $newtime = date('h:i', strtotime($time));
     // include a.m. or p.m. prefix
-    $newtime .= explode(':', $time)[0] <= 12 ? ' a.m.' : ' p.m.';
+    $newtime .= explode(':', $time)[0] <= 12 ? ' am' : ' pm';
 
     return $newtime;
 }

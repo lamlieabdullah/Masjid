@@ -14,3 +14,5 @@ cd /var/www/html/masjid
 sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/main/script.php
 sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/main/kemaskini1-2.php
 sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/main/grabjakim.php
+sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/main/waktuSolat.php
+

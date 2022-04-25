@@ -8,6 +8,10 @@
 # sudo chmod +x install.sh
 # Execute the script to install:
 # ./install
+#
+# Login to your phpMyadmin
+# import db from create_databse_masjid.sql
+#
 ################################################################################
 
 #LAMP

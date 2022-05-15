@@ -8,7 +8,7 @@ sudo chmod +x install.sh
 ./install.sh
 
 login to Phpmyadmin and create database masjid
-import db from 
+import db from create_databse_masjid.sql
 
 
 30/9/21

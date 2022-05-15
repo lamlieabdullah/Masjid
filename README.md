@@ -7,6 +7,9 @@ sudo wget https://raw.githubusercontent.com/lamlieabdullah/Masjid/install.sh
 sudo chmod +x install.sh
 ./install.sh
 
+login to Phpmyadmin and create database masjid
+import db from 
+
 
 30/9/21
 - [x]  Time offset (pahang insya +4min)

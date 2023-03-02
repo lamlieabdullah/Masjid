@@ -313,7 +313,7 @@ function get_tarikh_oee(){
 }
 
 function formatDate(date) {
-  var monthNames = ["Januari", "Februari", "MarMac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "December"];
+  var monthNames = ["Januari", "Februari", "Mac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "December"];
   
   var day = date.getDate();
   	if (day < 10) { day = "0" + day };
